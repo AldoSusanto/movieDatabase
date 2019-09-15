@@ -21,6 +21,30 @@ public class Movie {
     @SerializedName("popularity")
     private double views;
 
+    @SerializedName("poster_path")
+    private String posterUrl;
+
+    @SerializedName("backdrop_path")
+    private String backdropURL;
+
+
+
+    public String getPosterUrl() {
+        return posterUrl;
+    }
+
+    public void setPosterUrl(String posterUrl) {
+        this.posterUrl = posterUrl;
+    }
+
+    public String getBackdropURL() {
+        return backdropURL;
+    }
+
+    public void setBackdropURL(String backdropURL) {
+        this.backdropURL = backdropURL;
+    }
+
     public String getTitle() {
         return title;
     }
